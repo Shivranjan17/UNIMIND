@@ -1,0 +1,171 @@
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #E0E0E0; /* Light text color for readability */
+}
+
+/* Navigation Styles */
+nav {
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+nav.bg-white {
+  background-color: rgba(245, 237, 237, 0.95); /* Transparent background for a softer look */
+}
+
+/* Change shadow on scroll */
+nav.scrolled {
+  background-color: #1F1F1F; /* Darker solid color when scrolled */
+}
+
+/* Header Styles */
+h2, h3 {
+  color:  #60A5FA; /* Teal for headings */
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Nav Links */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: #E0E0E0; /* Light text for nav links */
+  text-decoration: none;
+  padding: 8px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #26A69A; /* Light teal on hover */
+}
+
+/* Button Styles */
+button {
+  background-color: #009688; /* Teal for buttons */
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #26A69A; /* Light teal on hover */
+}
+
+/* Service Component */
+.service-card {
+  background-color: #1F1F1F; /* Dark background for cards */
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Input & Textarea Styles
+input, textarea {
+  background-color: #2C2C2C; /* Darker input background 
+  color: #E0E0E0; /* Light text color 
+  border: 1px solid #444;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+} */
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #009688; /* Highlight border on focus */
+}
+
+/* Link Styles */
+.link {
+  color: #009688; /* Link color */
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #26A69A; /* Light teal on hover */
+}
+
+/* Keyframe Animations */
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDelay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-zoom {
+  animation: zoom 10s infinite ease-in-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 3s ease-in-out;
+}
+
+.animate-fade-in-delay {
+  animation: fadeIn 5s ease-in-out;
+}
+
+/* Animated Background */
+.animated-background {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.content-container {
+  padding-top: 90px; /* Adjust padding as needed */
+}
+
